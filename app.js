@@ -17,7 +17,7 @@ async function guess(params) {
     .then( value => {
 
         if( parseFloat(value.probability) <= 0.6){
-            display.textContent = `Haven't heard of ${value}, Chances you're either a "male" or a "female" is ${ parseFloat(value.probability)*100 }%`    
+            display.textContent = `Haven't heard of ${nameField.value}, Chances you're either a "male" or a "female" is ${ parseFloat(value.probability)*100 }%`    
         } else {
             display.textContent = `Chances you're a ${value.gender} is ${ parseFloat(value.probability)*100 }%`
         } 
