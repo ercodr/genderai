@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-x: -moz-hidden-unscrollable;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(117, 210, 253), rgb(68, 195, 253)); /*rgb(0, 81, 167));*/
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    align-items: center;
+}
+
+.container *{
+    color: #fff;
+}
+
+.header{
+    padding: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: 1000;
+    color: #003D5D;
+}
+
+
+
+.display #scr-txt{
+    color: #003D5D;
+    text-align: center;
+
+    background: rgba(255, 255, 255, .5);
+    margin: 35px;
+    border-radius: 10px;
+    height: 200px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(107, 107, 107, 0.2), 0 6px 20px 0 rgba(75, 75, 75, 0.19);
+}
+
+.entry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry input{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+}
+
+.entry input:first-child{
+    width: 100%;
+    background: #fff;
+    color: #003D5D;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(107, 107, 107, 0.2), 0 6px 20px 0 rgba(75, 75, 75, 0.19);
+}
+
+.entry input:not(:first-child){
+    width: 150px;
+    /* background: #FFB300; */
+    background: #003D5D;
+    font-weight: 800;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(107, 107, 107, 0.2), 0 6px 20px 0 rgba(75, 75, 75, 0.19);
+}
+
+.entry input:not(:first-child):active{
+    transform: scale(0.95);
+}
+
+#scr-txt{
+    display: flex;
+    flex-direction: column;
+}
+
+#scr-txt h6{
+    color: #ff3300;
+    font-weight: 400;
+    font-size: 12px;
+}
